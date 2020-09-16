@@ -68,10 +68,11 @@
     <ApplicationIcon>patient-icon-9244-Windows.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>55583B0DAE64E40C54E85FDF6FB4E5F8735617FF</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9FB96191C756FEE47FF8EC1705887A2AA5114847</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Sablon_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

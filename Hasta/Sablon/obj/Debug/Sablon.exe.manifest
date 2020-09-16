@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sablon.exe" size="139752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sablon.exe" size="139720">
       <assemblyIdentity name="Sablon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Kr1Iuzen/L5rjmeagUQXMmaLH262TC+brO/qBRk/cHI=</dsig:DigestValue>
+        <dsig:DigestValue>+GIycNxzxvxTvwQ4KmNVl6V7LUxvYkqrH+nn4+q6TRk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
