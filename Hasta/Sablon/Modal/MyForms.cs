@@ -1,8 +1,9 @@
-﻿using System.Windows.Forms;
+﻿using Sablon.Hasta;
+using System.Windows.Forms;
 
-namespace Sablon.Hasta
+namespace Sablon.Modal
 {
-    class Formlar
+    class MyForms
     {
         public void Hasta()
         {
@@ -40,7 +41,7 @@ namespace Sablon.Hasta
                 frm.WindowState = FormWindowState.Maximized;
                 frm.Show();
             }
-            return frmAnaSayfa.Aktarma;
+            return frmMainPage.Aktarma;
         }
 
         public void OperationList(bool secim = false)

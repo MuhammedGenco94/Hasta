@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sablon.Hasta
+namespace Sablon.Modal
 {
-    class Mesajlar
+    class MyMessages
     {
         public void YeniKayit(string mesaj)
         {

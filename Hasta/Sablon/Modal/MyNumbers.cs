@@ -7,11 +7,11 @@ using Sablon.Modal;
 
 namespace Sablon.Modal
 {
-    class Numaralar
+    class MyNumbers
     {
         HastaDBDataContext _db = new HastaDBDataContext();
 
-        public string HastaID()
+        public string GetNewPatientID()
         {
             try
             {

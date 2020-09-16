@@ -8,16 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sablon.Hasta;
+using Sablon.Modal;
 
 namespace Sablon
 {
-    public partial class frmAnaSayfa : Form
+    public partial class frmMainPage : Form
     {
         public static int Aktarma;
         public static string AnaString = "";
-        Formlar _f = new Formlar();
+        MyForms _f = new MyForms();
 
-        public frmAnaSayfa()
+        public frmMainPage()
         {
             InitializeComponent();
         }
@@ -94,6 +95,5 @@ namespace Sablon
             _f.Ara();
             closeAllForms();
         }
-
     }
 }

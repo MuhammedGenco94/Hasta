@@ -28,33 +28,33 @@ namespace Sablon.Modal
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
-	#region Extensibility Method Definitions
-	partial void OnCreated();
-	partial void Insertdbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
-	partial void Updatedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
-	partial void Deletedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
-	partial void InserttblTakipVerileri(tblTakipVerileri instance);
-	partial void UpdatetblTakipVerileri(tblTakipVerileri instance);
-	partial void DeletetblTakipVerileri(tblTakipVerileri instance);
-	partial void InserttblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
-	partial void UpdatetblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
-	partial void DeletetblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
-	partial void InserttblDoktor(tblDoktor instance);
-	partial void UpdatetblDoktor(tblDoktor instance);
-	partial void DeletetblDoktor(tblDoktor instance);
-	partial void InserttblHastaBilgileri(tblHastaBilgileri instance);
-	partial void UpdatetblHastaBilgileri(tblHastaBilgileri instance);
-	partial void DeletetblHastaBilgileri(tblHastaBilgileri instance);
-	partial void InserttblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
-	partial void UpdatetblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
-	partial void DeletetblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
-	partial void InserttblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
-	partial void UpdatetblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
-	partial void DeletetblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
-	partial void InserttblOpTuru(tblOpTuru instance);
-	partial void UpdatetblOpTuru(tblOpTuru instance);
-	partial void DeletetblOpTuru(tblOpTuru instance);
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnCreated();
+    partial void Insertdbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
+    partial void Updatedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
+    partial void Deletedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
+    partial void InserttblTakipVerileri(tblTakipVerileri instance);
+    partial void UpdatetblTakipVerileri(tblTakipVerileri instance);
+    partial void DeletetblTakipVerileri(tblTakipVerileri instance);
+    partial void InserttblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
+    partial void UpdatetblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
+    partial void DeletetblDemografik_Ozellikleri(tblDemografik_Ozellikleri instance);
+    partial void InserttblDoktor(tblDoktor instance);
+    partial void UpdatetblDoktor(tblDoktor instance);
+    partial void DeletetblDoktor(tblDoktor instance);
+    partial void InserttblHastaBilgileri(tblHastaBilgileri instance);
+    partial void UpdatetblHastaBilgileri(tblHastaBilgileri instance);
+    partial void DeletetblHastaBilgileri(tblHastaBilgileri instance);
+    partial void InserttblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
+    partial void UpdatetblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
+    partial void DeletetblOperatif_Ozellikler(tblOperatif_Ozellikler instance);
+    partial void InserttblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
+    partial void UpdatetblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
+    partial void DeletetblPosOperatif_Ozellikler(tblPosOperatif_Ozellikler instance);
+    partial void InserttblOpTuru(tblOpTuru instance);
+    partial void UpdatetblOpTuru(tblOpTuru instance);
+    partial void DeletetblOpTuru(tblOpTuru instance);
+    #endregion
 		
 		public HastaDBDataContext() : 
 				base(global::Sablon.Properties.Settings.Default.HastaConnectionString, mappingSource)
@@ -173,25 +173,25 @@ namespace Sablon.Modal
 		
 		private EntityRef<tblHastaBilgileri> _tblHastaBilgileri;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnHastaIDChanging(System.Nullable<int> value);
-	partial void OnHastaIDChanged();
-	partial void OnPATOLOJIChanging(string value);
-	partial void OnPATOLOJIChanged();
-	partial void OnALT_GRUPChanging(string value);
-	partial void OnALT_GRUPChanged();
-	partial void OnFURHMAN_GRADEChanging(System.Nullable<int> value);
-	partial void OnFURHMAN_GRADEChanged();
-	partial void OnPATOLOJIK_EVREChanging(string value);
-	partial void OnPATOLOJIK_EVREChanged();
-	partial void OnCERRAHI_SINIRChanging(string value);
-	partial void OnCERRAHI_SINIRChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnHastaIDChanging(System.Nullable<int> value);
+    partial void OnHastaIDChanged();
+    partial void OnPATOLOJIChanging(string value);
+    partial void OnPATOLOJIChanged();
+    partial void OnALT_GRUPChanging(string value);
+    partial void OnALT_GRUPChanged();
+    partial void OnFURHMAN_GRADEChanging(System.Nullable<int> value);
+    partial void OnFURHMAN_GRADEChanged();
+    partial void OnPATOLOJIK_EVREChanging(string value);
+    partial void OnPATOLOJIK_EVREChanged();
+    partial void OnCERRAHI_SINIRChanging(string value);
+    partial void OnCERRAHI_SINIRChanged();
+    #endregion
 		
 		public dbo_tblPatolojikVeriler()
 		{
@@ -422,27 +422,27 @@ namespace Sablon.Modal
 		
 		private EntityRef<tblHastaBilgileri> _tblHastaBilgileri;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnHastaIDChanging(System.Nullable<int> value);
-	partial void OnHastaIDChanged();
-	partial void OnPOSTOP_3_AY_LOKAL_NUKSChanging(string value);
-	partial void OnPOSTOP_3_AY_LOKAL_NUKSChanged();
-	partial void OnPOSTOP_3_AY_KREATINChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_3_AY_KREATINChanged();
-	partial void OnPOSTOP_6_AY_LOKAL_NUKSChanging(string value);
-	partial void OnPOSTOP_6_AY_LOKAL_NUKSChanged();
-	partial void OnPOSTOP_6_AY_KREATINChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_6_AY_KREATINChanged();
-	partial void OnPOSTOP_12_AY_LOKAL_NUKSChanging(string value);
-	partial void OnPOSTOP_12_AY_LOKAL_NUKSChanged();
-	partial void OnPOSTOP_12_AY_KREATINChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_12_AY_KREATINChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnHastaIDChanging(System.Nullable<int> value);
+    partial void OnHastaIDChanged();
+    partial void OnPOSTOP_3_AY_LOKAL_NUKSChanging(string value);
+    partial void OnPOSTOP_3_AY_LOKAL_NUKSChanged();
+    partial void OnPOSTOP_3_AY_KREATINChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_3_AY_KREATINChanged();
+    partial void OnPOSTOP_6_AY_LOKAL_NUKSChanging(string value);
+    partial void OnPOSTOP_6_AY_LOKAL_NUKSChanged();
+    partial void OnPOSTOP_6_AY_KREATINChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_6_AY_KREATINChanged();
+    partial void OnPOSTOP_12_AY_LOKAL_NUKSChanging(string value);
+    partial void OnPOSTOP_12_AY_LOKAL_NUKSChanged();
+    partial void OnPOSTOP_12_AY_KREATINChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_12_AY_KREATINChanged();
+    #endregion
 		
 		public tblTakipVerileri()
 		{
@@ -703,37 +703,37 @@ namespace Sablon.Modal
 		
 		private EntityRef<tblHastaBilgileri> _tblHastaBilgileri;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnHastaIDChanging(System.Nullable<int> value);
-	partial void OnHastaIDChanged();
-	partial void OnYasChanging(System.Nullable<int> value);
-	partial void OnYasChanged();
-	partial void OnBoyChanging(System.Nullable<int> value);
-	partial void OnBoyChanged();
-	partial void OnKiloChanging(System.Nullable<int> value);
-	partial void OnKiloChanged();
-	partial void OnBMIChanging(System.Nullable<int> value);
-	partial void OnBMIChanged();
-	partial void OnASAChanging(System.Nullable<int> value);
-	partial void OnASAChanged();
-	partial void OnDrChanging(string value);
-	partial void OnDrChanged();
-	partial void OnCinsChanging(string value);
-	partial void OnCinsChanged();
-	partial void OnTarafChanging(string value);
-	partial void OnTarafChanged();
-	partial void OnLokalizasyonChanging(string value);
-	partial void OnLokalizasyonChanged();
-	partial void OnBoyutChanging(System.Nullable<int> value);
-	partial void OnBoyutChanged();
-	partial void OnKO_MorbiditeChanging(string value);
-	partial void OnKO_MorbiditeChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnHastaIDChanging(System.Nullable<int> value);
+    partial void OnHastaIDChanged();
+    partial void OnYasChanging(System.Nullable<int> value);
+    partial void OnYasChanged();
+    partial void OnBoyChanging(System.Nullable<int> value);
+    partial void OnBoyChanged();
+    partial void OnKiloChanging(System.Nullable<int> value);
+    partial void OnKiloChanged();
+    partial void OnBMIChanging(System.Nullable<int> value);
+    partial void OnBMIChanged();
+    partial void OnASAChanging(System.Nullable<int> value);
+    partial void OnASAChanged();
+    partial void OnDrChanging(string value);
+    partial void OnDrChanged();
+    partial void OnCinsChanging(string value);
+    partial void OnCinsChanged();
+    partial void OnTarafChanging(string value);
+    partial void OnTarafChanged();
+    partial void OnLokalizasyonChanging(string value);
+    partial void OnLokalizasyonChanged();
+    partial void OnBoyutChanging(System.Nullable<int> value);
+    partial void OnBoyutChanged();
+    partial void OnKO_MorbiditeChanging(string value);
+    partial void OnKO_MorbiditeChanged();
+    #endregion
 		
 		public tblDemografik_Ozellikleri()
 		{
@@ -1070,15 +1070,15 @@ namespace Sablon.Modal
 		
 		private string _DrAdi;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnDrAdiChanging(string value);
-	partial void OnDrAdiChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnDrAdiChanging(string value);
+    partial void OnDrAdiChanged();
+    #endregion
 		
 		public tblDoktor()
 		{
@@ -1178,27 +1178,27 @@ namespace Sablon.Modal
 		
 		private EntitySet<tblPosOperatif_Ozellikler> _tblPosOperatif_Ozelliklers;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnAdChanging(string value);
-	partial void OnAdChanged();
-	partial void OnSoyadChanging(string value);
-	partial void OnSoyadChanged();
-	partial void OnProtokolChanging(string value);
-	partial void OnProtokolChanged();
-	partial void OnOPTarihiChanging(System.Nullable<System.DateTime> value);
-	partial void OnOPTarihiChanged();
-	partial void OnOPTuruChanging(string value);
-	partial void OnOPTuruChanged();
-	partial void OnTakipChanging(System.Nullable<int> value);
-	partial void OnTakipChanged();
-	partial void OnANAHChanging(System.Nullable<int> value);
-	partial void OnANAHChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnAdChanging(string value);
+    partial void OnAdChanged();
+    partial void OnSoyadChanging(string value);
+    partial void OnSoyadChanged();
+    partial void OnProtokolChanging(string value);
+    partial void OnProtokolChanged();
+    partial void OnOPTarihiChanging(System.Nullable<System.DateTime> value);
+    partial void OnOPTarihiChanged();
+    partial void OnOPTuruChanging(string value);
+    partial void OnOPTuruChanged();
+    partial void OnTakipChanging(System.Nullable<int> value);
+    partial void OnTakipChanged();
+    partial void OnANAHChanging(System.Nullable<int> value);
+    partial void OnANAHChanged();
+    #endregion
 		
 		public tblHastaBilgileri()
 		{
@@ -1548,35 +1548,35 @@ namespace Sablon.Modal
 		
 		private EntityRef<tblHastaBilgileri> _tblHastaBilgileri;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnHastaIDChanging(System.Nullable<int> value);
-	partial void OnHastaIDChanged();
-	partial void OnPKS_AciklamaChanging(string value);
-	partial void OnPKS_AciklamaChanged();
-	partial void OnSIKChanging(string value);
-	partial void OnSIKChanged();
-	partial void OnCO_OperasyonChanging(string value);
-	partial void OnCO_OperasyonChanged();
-	partial void OniskemiChanging(System.Nullable<int> value);
-	partial void OniskemiChanged();
-	partial void OnPort_SayisiChanging(System.Nullable<int> value);
-	partial void OnPort_SayisiChanged();
-	partial void OnYardim_YNTChanging(string value);
-	partial void OnYardim_YNTChanged();
-	partial void OnSureChanging(System.Nullable<int> value);
-	partial void OnSureChanged();
-	partial void OnDRENChanging(string value);
-	partial void OnDRENChanged();
-	partial void OnKANAMAChanging(System.Nullable<int> value);
-	partial void OnKANAMAChanged();
-	partial void OnPIYESChanging(System.Nullable<int> value);
-	partial void OnPIYESChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnHastaIDChanging(System.Nullable<int> value);
+    partial void OnHastaIDChanged();
+    partial void OnPKS_AciklamaChanging(string value);
+    partial void OnPKS_AciklamaChanged();
+    partial void OnSIKChanging(string value);
+    partial void OnSIKChanged();
+    partial void OnCO_OperasyonChanging(string value);
+    partial void OnCO_OperasyonChanged();
+    partial void OniskemiChanging(System.Nullable<int> value);
+    partial void OniskemiChanged();
+    partial void OnPort_SayisiChanging(System.Nullable<int> value);
+    partial void OnPort_SayisiChanged();
+    partial void OnYardim_YNTChanging(string value);
+    partial void OnYardim_YNTChanged();
+    partial void OnSureChanging(System.Nullable<int> value);
+    partial void OnSureChanged();
+    partial void OnDRENChanging(string value);
+    partial void OnDRENChanged();
+    partial void OnKANAMAChanging(System.Nullable<int> value);
+    partial void OnKANAMAChanged();
+    partial void OnPIYESChanging(System.Nullable<int> value);
+    partial void OnPIYESChanged();
+    #endregion
 		
 		public tblOperatif_Ozellikler()
 		{
@@ -1919,39 +1919,39 @@ namespace Sablon.Modal
 		
 		private EntityRef<tblHastaBilgileri> _tblHastaBilgileri;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnHastaIDChanging(System.Nullable<int> value);
-	partial void OnHastaIDChanged();
-	partial void OnPEROP_VE_ERKEN_KOMPChanging(string value);
-	partial void OnPEROP_VE_ERKEN_KOMPChanged();
-	partial void OnPOSTOP_ANALIZChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_ANALIZChanged();
-	partial void OnSONDAChanging(string value);
-	partial void OnSONDAChanged();
-	partial void OnHOSP_SURESIChanging(System.Nullable<int> value);
-	partial void OnHOSP_SURESIChanged();
-	partial void OnPREOP_KREATINChanging(System.Nullable<decimal> value);
-	partial void OnPREOP_KREATINChanged();
-	partial void OnPOSTOP_KREATINChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_KREATINChanged();
-	partial void OnPREOP_HCTChanging(System.Nullable<decimal> value);
-	partial void OnPREOP_HCTChanged();
-	partial void OnPOSTOP_HCTChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_HCTChanged();
-	partial void OnPREOP_HBChanging(System.Nullable<decimal> value);
-	partial void OnPREOP_HBChanged();
-	partial void OnPOSTOP_HBChanging(System.Nullable<decimal> value);
-	partial void OnPOSTOP_HBChanged();
-	partial void OnTAKIPChanging(string value);
-	partial void OnTAKIPChanged();
-	partial void OnTELChanging(string value);
-	partial void OnTELChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnHastaIDChanging(System.Nullable<int> value);
+    partial void OnHastaIDChanged();
+    partial void OnPEROP_VE_ERKEN_KOMPChanging(string value);
+    partial void OnPEROP_VE_ERKEN_KOMPChanged();
+    partial void OnPOSTOP_ANALIZChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_ANALIZChanged();
+    partial void OnSONDAChanging(string value);
+    partial void OnSONDAChanged();
+    partial void OnHOSP_SURESIChanging(System.Nullable<int> value);
+    partial void OnHOSP_SURESIChanged();
+    partial void OnPREOP_KREATINChanging(System.Nullable<decimal> value);
+    partial void OnPREOP_KREATINChanged();
+    partial void OnPOSTOP_KREATINChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_KREATINChanged();
+    partial void OnPREOP_HCTChanging(System.Nullable<decimal> value);
+    partial void OnPREOP_HCTChanged();
+    partial void OnPOSTOP_HCTChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_HCTChanged();
+    partial void OnPREOP_HBChanging(System.Nullable<decimal> value);
+    partial void OnPREOP_HBChanged();
+    partial void OnPOSTOP_HBChanging(System.Nullable<decimal> value);
+    partial void OnPOSTOP_HBChanged();
+    partial void OnTAKIPChanging(string value);
+    partial void OnTAKIPChanged();
+    partial void OnTELChanging(string value);
+    partial void OnTELChanged();
+    #endregion
 		
 		public tblPosOperatif_Ozellikler()
 		{
@@ -2308,15 +2308,15 @@ namespace Sablon.Modal
 		
 		private string _OpTuru;
 		
-	#region Extensibility Method Definitions
-	partial void OnLoaded();
-	partial void OnValidate(System.Data.Linq.ChangeAction action);
-	partial void OnCreated();
-	partial void OnIDChanging(int value);
-	partial void OnIDChanged();
-	partial void OnOpTuruChanging(string value);
-	partial void OnOpTuruChanged();
-	#endregion
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnOpTuruChanging(string value);
+    partial void OnOpTuruChanged();
+    #endregion
 		
 		public tblOpTuru()
 		{

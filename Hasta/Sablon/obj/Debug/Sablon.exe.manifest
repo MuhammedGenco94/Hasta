@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sablon.exe" size="139720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sablon.exe" size="137672">
       <assemblyIdentity name="Sablon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+GIycNxzxvxTvwQ4KmNVl6V7LUxvYkqrH+nn4+q6TRk=</dsig:DigestValue>
+        <dsig:DigestValue>BnMnlvvmkfec+f8Ob3fSTUqKpHmhPYZ72cHBO0H3j1Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>Zt5j3MV4HkeH6ey7EK6PzAyRIFa9KX/87vv9KEwHOUM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sablon.exe.config" size="506">
+  <file name="Sablon.exe.config" size="735">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Kendh51BjoxueHZ38hrpm4hHj3UbeqMbmErh6oUDIi0=</dsig:DigestValue>
+      <dsig:DigestValue>j2JVAAPA1KUZdjP0QvJS/h5FgW3JL01A9WzszjhK0QA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

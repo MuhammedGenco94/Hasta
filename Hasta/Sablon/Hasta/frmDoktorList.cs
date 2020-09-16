@@ -14,7 +14,7 @@ namespace Sablon.Hasta
     public partial class frmDoktorList : Form
     {
         HastaDBDataContext _db = new HastaDBDataContext();
-        Mesajlar _m = new Mesajlar();
+        MyMessages _m = new MyMessages();
 
         public bool Secim = false;
         public string DoktorString = "";
@@ -66,7 +66,7 @@ namespace Sablon.Hasta
                         DoktorString = DoktorString.Remove(DoktorString.Length - 1);
                     }
                 }
-                frmAnaSayfa.AnaString = DoktorString;
+                frmMainPage.AnaString = DoktorString;
                 if (DoktorString != "")
                 {
                     Close();

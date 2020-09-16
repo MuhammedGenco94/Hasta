@@ -14,7 +14,7 @@ namespace Sablon.Hasta
     public partial class FrmOperationList : Form
     {
         HastaDBDataContext _db = new HastaDBDataContext();
-        Mesajlar _m = new Mesajlar();
+        MyMessages _m = new MyMessages();
 
         public bool Secim = false;
         public string OperationString = "";
@@ -71,7 +71,7 @@ namespace Sablon.Hasta
                         OperationString = OperationString.Remove(OperationString.Length - 1);
                     }
                 }
-                frmAnaSayfa.AnaString = OperationString;
+                frmMainPage.AnaString = OperationString;
                 if (OperationString != "")
                 {
                     Close();

@@ -54,7 +54,7 @@ namespace Sablon.Hasta
             Sec();
             if (Secim && _secimId > 0)
             {
-                frmAnaSayfa.Aktarma = _secimId;
+                frmMainPage.Aktarma = _secimId;
                 Close();
             }
         }

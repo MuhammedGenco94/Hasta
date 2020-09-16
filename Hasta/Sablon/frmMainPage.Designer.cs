@@ -1,6 +1,6 @@
 ﻿namespace Sablon
 {
-    partial class frmAnaSayfa
+    partial class frmMainPage
     {
         /// <summary>
         /// Required designer variable.

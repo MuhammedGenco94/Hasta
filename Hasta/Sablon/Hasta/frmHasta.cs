@@ -14,9 +14,9 @@ namespace Sablon.Hasta
     public partial class frmHasta : Form
     {
         HastaDBDataContext _db = new HastaDBDataContext();
-        Formlar _f = new Formlar();
-        Mesajlar _m = new Mesajlar();
-        Numaralar _n = new Numaralar();
+        MyForms _f = new MyForms();
+        MyMessages _m = new MyMessages();
+        MyNumbers _n = new MyNumbers();
 
         bool edit = false;
         int _HastaID = -1;
@@ -49,13 +49,15 @@ namespace Sablon.Hasta
                     }
                 }
             }
+
             #region HastaID
-            txtHastaID.Text = _n.HastaID();
-            txtHastaIdDemo.Text = _n.HastaID();
-            txtHastaIdOper.Text = _n.HastaID();
-            txtHastaIdPatol.Text = _n.HastaID();
-            txtHastaIdPosOP.Text = _n.HastaID();
-            txtHastaIdTakipVer.Text = _n.HastaID();
+            string newPatientId = _n.GetNewPatientID();
+            txtHastaID.Text = newPatientId;
+            txtHastaIdDemo.Text = newPatientId;
+            txtHastaIdOper.Text = newPatientId;
+            txtHastaIdPatol.Text = newPatientId;
+            txtHastaIdPosOP.Text = newPatientId;
+            txtHastaIdTakipVer.Text = newPatientId;
             #endregion
 
             dtpOPTarihi.Text = DateTime.Now.ToShortDateString();
@@ -243,7 +245,7 @@ namespace Sablon.Hasta
                 Demog.Cins = cbCins.Text;
                 Demog.Taraf = cbTaraf.Text;
                 Demog.Lokalizasyon = txtLokalizasyon.Text;
-                Demog.Boyut = int.Parse(txtBoyut.Text);
+                Demog.Boyut = txtBoyut.Text != "" ? int.Parse(txtBoyut.Text) : (-1);
                 Demog.KO_Morbidite = txtKoMorbidite.Text;
                 _db.tblDemografik_Ozellikleris.InsertOnSubmit(Demog);
                 #endregion
@@ -465,14 +467,14 @@ namespace Sablon.Hasta
         {
             _f.DoktorList(true);
             DoktorAktar();
-            frmAnaSayfa.AnaString = "";
+            frmMainPage.AnaString = "";
         }
         void DoktorAktar()
         {
             try
             {
                 //edit = true;
-                txtDR.Text = frmAnaSayfa.AnaString;
+                txtDR.Text = frmMainPage.AnaString;
             }
             catch (Exception e)
             {
@@ -487,7 +489,7 @@ namespace Sablon.Hasta
             {
                 HastaAktar(Hasid);
             }
-            frmAnaSayfa.Aktarma = -1;
+            frmMainPage.Aktarma = -1;
         }
         void HastaAktar(int id)
         {
@@ -587,22 +589,22 @@ namespace Sablon.Hasta
         {
             _f.OperationList(true);
             OperationAktar();
-            frmAnaSayfa.AnaString = "";
+            frmMainPage.AnaString = "";
         }
         void OperationAktar()
         {
             try
             {
                 //edit = true;
-                txtOPTuru.Text = frmAnaSayfa.AnaString;
+                txtOPTuru.Text = frmMainPage.AnaString;
             }
             catch (Exception e)
             {
                 _m.Hata(e);
             }
-        } 
+        }
         #endregion
-        
+
         private void btnSil_Click(object sender, EventArgs e)
         {
 

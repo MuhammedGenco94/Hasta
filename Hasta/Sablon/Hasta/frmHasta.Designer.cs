@@ -1430,7 +1430,7 @@
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(140, 73);
             this.btnSil.TabIndex = 1;
-            this.btnSil.Text = "Silmene Gerek YOK !!";
+            this.btnSil.Text = "Sil (Aktif değil)";
             this.btnSil.UseVisualStyleBackColor = false;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
