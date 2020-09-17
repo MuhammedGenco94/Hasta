@@ -3,7 +3,7 @@
   <DataContextMoniker Name="/HastaDBDataContext" />
   <nestedChildShapes>
     <classShape Id="da505a7b-073b-4d1d-b0a8-c9c92e6dceaf" absoluteBounds="3.5, 1.75, 2, 2.1554996744791666">
-      <DataClassMoniker Name="/HastaDBDataContext/dbo_tblPatolojikVeriler" />
+      <DataClassMoniker Name="/HastaDBDataContext/tblPatolojikVeriler" />
       <nestedChildShapes>
         <elementListCompartment Id="61e11319-da1e-4dba-bad4-ee937af9b78e" absoluteBounds="3.515, 2.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
@@ -45,7 +45,7 @@
       </nestedChildShapes>
     </classShape>
     <associationConnector edgePoints="[(1.75 : 9.25); (1.75 : 2.82774983723958); (3.5 : 2.82774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/HastaDBDataContext/tblHastaBilgileri/tblHastaBilgileri_dbo_tblPatolojikVeriler" />
+      <AssociationMoniker Name="/HastaDBDataContext/tblHastaBilgileri/tblHastaBilgileri_tblPatolojikVeriler" />
       <nodes>
         <classShapeMoniker Id="8c6f1317-93b3-424e-bb23-02fe44878ac5" />
         <classShapeMoniker Id="da505a7b-073b-4d1d-b0a8-c9c92e6dceaf" />

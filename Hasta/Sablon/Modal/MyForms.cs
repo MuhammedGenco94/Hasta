@@ -5,65 +5,65 @@ namespace Sablon.Modal
 {
     class MyForms
     {
-        public void Hasta()
+        public void Patient()
         {
-            frmHasta frm = new frmHasta();
+            FRMPatient frm = new FRMPatient();
             frm.MdiParent = Form.ActiveForm;
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
 
-        public void DoktorList(bool secim = false)
+        public void DoktorList(bool selection = false)
         {
-            frmDoktorList frm = new frmDoktorList();
-            if (secim)
+            FRMDoctorList frmDoctorL = new FRMDoctorList();
+            if (selection)
             {
-                frm.Secim = true;
-                frm.ShowDialog();
+                frmDoctorL.Secim = true;
+                frmDoctorL.ShowDialog();
             }
             else
             {
-                frm.ShowDialog();
+                frmDoctorL.ShowDialog();
             }
         }
 
         public int HastaList(bool secim = false)
         {
-            frmHastaList frm = new frmHastaList();
+            FRMPatientList frmPatientL = new FRMPatientList();
             if (secim)
             {
-                frm.Secim = true;
-                frm.ShowDialog();
+                frmPatientL.mainSelection = true;
+                frmPatientL.ShowDialog();
             }
             else
             {
-                frm.MdiParent = Form.ActiveForm;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
+                frmPatientL.MdiParent = Form.ActiveForm;
+                frmPatientL.WindowState = FormWindowState.Maximized;
+                frmPatientL.Show();
             }
-            return frmMainPage.Aktarma;
+            return frmMainPage.transferID;
         }
 
         public void OperationList(bool secim = false)
         {
-            FrmOperationList frm = new FrmOperationList();
+            FRMOperationList frmOperationL = new FRMOperationList();
             if (secim)
             {
-                frm.Secim = true;
-                frm.ShowDialog();
+                frmOperationL.mainSelection = true;
+                frmOperationL.ShowDialog();
             }
             else
             {
-                frm.ShowDialog();
+                frmOperationL.ShowDialog();
             }
         }
 
         public void Ara(bool secim = false)
         {
-            frmArama Ara = new frmArama();
-            Ara.MdiParent = Form.ActiveForm;
-            Ara.WindowState = FormWindowState.Maximized;
-            Ara.Show();
+            FRMSearch frmSearch = new FRMSearch();
+            frmSearch.MdiParent = Form.ActiveForm;
+            frmSearch.WindowState = FormWindowState.Maximized;
+            frmSearch.Show();
         }
     }
 }

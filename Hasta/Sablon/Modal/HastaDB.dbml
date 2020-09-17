@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Hasta" Class="HastaDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=ASUS-MUHAMMED;Initial Catalog=Hasta;User ID=sa" SettingsObjectName="Sablon.Properties.Settings" SettingsPropertyName="HastaConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.[dbo.tblPatolojikVeriler]" Member="dbo_tblPatolojikVerilers">
-    <Type Name="dbo_tblPatolojikVeriler">
+  <Table Name="dbo.[tblPatolojikVeriler]" Member="tblPatolojikVerilers">
+    <Type Name="tblPatolojikVeriler">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="HastaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="PATOLOJI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
@@ -9,7 +9,7 @@
       <Column Name="FURHMAN_GRADE" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="PATOLOJIK_EVRE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="CERRAHI_SINIR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="tblHastaBilgileri_dbo_tblPatolojikVeriler" Member="tblHastaBilgileri" ThisKey="HastaID" OtherKey="ID" Type="tblHastaBilgileri" IsForeignKey="true" />
+      <Association Name="tblHastaBilgileri_tblPatolojikVeriler" Member="tblHastaBilgileri" ThisKey="HastaID" OtherKey="ID" Type="tblHastaBilgileri" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.tblTakipVerileri" Member="tblTakipVerileris">
@@ -59,7 +59,7 @@
       <Column Name="OPTuru" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
       <Column Name="Takip" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ANAH" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="tblHastaBilgileri_dbo_tblPatolojikVeriler" Member="dbo_tblPatolojikVerilers" ThisKey="ID" OtherKey="HastaID" Type="dbo_tblPatolojikVeriler" />
+      <Association Name="tblHastaBilgileri_tblPatolojikVeriler" Member="tblPatolojikVerilers" ThisKey="ID" OtherKey="HastaID" Type="tblPatolojikVeriler" />
       <Association Name="tblHastaBilgileri_tblTakipVerileri" Member="tblTakipVerileris" ThisKey="ID" OtherKey="HastaID" Type="tblTakipVerileri" />
       <Association Name="tblHastaBilgileri_tblDemografik_Ozellikleri" Member="tblDemografik_Ozellikleris" ThisKey="ID" OtherKey="HastaID" Type="tblDemografik_Ozellikleri" />
       <Association Name="tblHastaBilgileri_tblOperatif_Ozellikler" Member="tblOperatif_Ozelliklers" ThisKey="ID" OtherKey="HastaID" Type="tblOperatif_Ozellikler" />

@@ -11,15 +11,15 @@ using Sablon.Modal;
 
 namespace Sablon.Hasta
 {
-    public partial class FrmOperationList : Form
+    public partial class FRMOperationList : Form
     {
         HastaDBDataContext _db = new HastaDBDataContext();
-        MyMessages _m = new MyMessages();
+        MyMessages myMessages = new MyMessages();
 
-        public bool Secim = false;
+        public bool mainSelection = false;
         public string OperationString = "";
         
-        public FrmOperationList()
+        public FRMOperationList()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Sablon.Hasta
             Close();
         }
 
-        private void frmOperationList_Load(object sender, EventArgs e)
+        private void FRMOperationList_Load(object sender, EventArgs e)
         {
             Listele();
         }
@@ -59,7 +59,7 @@ namespace Sablon.Hasta
         
         private void butAktar_Click(object sender, EventArgs e)
         {
-            if (Secim)
+            if (mainSelection)
             {
                 OperationString += txtOP1.Text + "+" + txtOP2.Text + "+" + txtOP3.Text + "+"
                                 + txtOP4.Text + "+" + txtOP5.Text + "+" + txtOP6.Text;
@@ -71,7 +71,7 @@ namespace Sablon.Hasta
                         OperationString = OperationString.Remove(OperationString.Length - 1);
                     }
                 }
-                frmMainPage.AnaString = OperationString;
+                frmMainPage.myMainString = OperationString;
                 if (OperationString != "")
                 {
                     Close();
@@ -122,7 +122,7 @@ namespace Sablon.Hasta
             }
             catch (Exception k)
             {
-                _m.Hata(k);
+                myMessages.Hata(k);
             }
         }
 
@@ -143,7 +143,7 @@ namespace Sablon.Hasta
 
             _db.tblOpTurus.InsertOnSubmit(yeniOperation);
             _db.SubmitChanges();
-            _m.YeniKayit("Yeni Operasyon başarıyla eklendi.");
+            myMessages.YeniKayit("Yeni Operasyon başarıyla eklendi.");
         }
     }
 }

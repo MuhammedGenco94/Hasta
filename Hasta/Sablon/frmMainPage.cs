@@ -14,16 +14,16 @@ namespace Sablon
 {
     public partial class frmMainPage : Form
     {
-        public static int Aktarma;
-        public static string AnaString = "";
-        MyForms _f = new MyForms();
+        public static int transferID;
+        public static string myMainString = "";
+        MyForms myForms = new MyForms();
 
         public frmMainPage()
         {
             InitializeComponent();
         }
 
-        private void frmAnaSayfa_Load(object sender, EventArgs e)
+        private void frmMainPage_Load(object sender, EventArgs e)
         {
             pnlLeft1.Visible = false;
             grpLeft.BackColor = Color.Teal;
@@ -72,7 +72,7 @@ namespace Sablon
         
         private void btnHastaGir_Click(object sender, EventArgs e)
         {
-            _f.Hasta();
+            myForms.Patient();
             closeAllForms();
         }
 
@@ -87,12 +87,12 @@ namespace Sablon
 
         private void btnHastaList_Click(object sender, EventArgs e)
         {
-            _f.HastaList();
+            myForms.HastaList();
         }
         
         private void btnAra_Click(object sender, EventArgs e)
         {
-            _f.Ara();
+            myForms.Ara();
             closeAllForms();
         }
     }

@@ -211,7 +211,7 @@
             this.Name = "frmAnaSayfa";
             this.Text = "frmAnaSayfa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmAnaSayfa_Load);
+            this.Load += new System.EventHandler(this.frmMainPage_Load);
             this.pnlUst.ResumeLayout(false);
             this.grpLeft.ResumeLayout(false);
             this.pnlLeft1.ResumeLayout(false);

@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Muhammed\Desktop\</PublishUrl>
+    <PublishUrl>C:\Users\muham\Desktop\HastaApp\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,10 +23,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ProductName>Hasta</ProductName>
+    <PublisherName>Muhamme Genco</PublisherName>
+    <SuiteName>Muhamme Genco</SuiteName>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -95,36 +98,36 @@
     <Compile Include="frmMainPage.Designer.cs">
       <DependentUpon>frmMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hasta\frmArama.cs">
+    <Compile Include="Hasta\FRMSearch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hasta\frmArama.Designer.cs">
-      <DependentUpon>frmArama.cs</DependentUpon>
+    <Compile Include="Hasta\FRMSearch.Designer.cs">
+      <DependentUpon>FRMSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hasta\frmDoktorList.cs">
+    <Compile Include="Hasta\FRMDoctorList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hasta\frmDoktorList.Designer.cs">
-      <DependentUpon>frmDoktorList.cs</DependentUpon>
+    <Compile Include="Hasta\FRMDoctorList.Designer.cs">
+      <DependentUpon>FRMDoctorList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hasta\frmHastaList.cs">
+    <Compile Include="Hasta\FRMPatientList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hasta\frmHastaList.Designer.cs">
-      <DependentUpon>frmHastaList.cs</DependentUpon>
+    <Compile Include="Hasta\FRMPatientList.Designer.cs">
+      <DependentUpon>FRMPatientList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hasta\frmOperationList.cs">
+    <Compile Include="Hasta\FRMOperationList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hasta\frmOperationList.Designer.cs">
-      <DependentUpon>frmOperationList.cs</DependentUpon>
+    <Compile Include="Hasta\FRMOperationList.Designer.cs">
+      <DependentUpon>FRMOperationList.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\MyForms.cs" />
-    <Compile Include="Hasta\frmHasta.cs">
+    <Compile Include="Hasta\FRMPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hasta\frmHasta.Designer.cs">
-      <DependentUpon>frmHasta.cs</DependentUpon>
+    <Compile Include="Hasta\FRMPatient.Designer.cs">
+      <DependentUpon>FRMPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\HastaDB.designer.cs">
       <AutoGen>True</AutoGen>
@@ -138,20 +141,20 @@
     <EmbeddedResource Include="frmMainPage.resx">
       <DependentUpon>frmMainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hasta\frmArama.resx">
-      <DependentUpon>frmArama.cs</DependentUpon>
+    <EmbeddedResource Include="Hasta\FRMSearch.resx">
+      <DependentUpon>FRMSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hasta\frmDoktorList.resx">
-      <DependentUpon>frmDoktorList.cs</DependentUpon>
+    <EmbeddedResource Include="Hasta\FRMDoctorList.resx">
+      <DependentUpon>FRMDoctorList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hasta\frmHasta.resx">
-      <DependentUpon>frmHasta.cs</DependentUpon>
+    <EmbeddedResource Include="Hasta\FRMPatient.resx">
+      <DependentUpon>FRMPatient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hasta\frmHastaList.resx">
-      <DependentUpon>frmHastaList.cs</DependentUpon>
+    <EmbeddedResource Include="Hasta\FRMPatientList.resx">
+      <DependentUpon>FRMPatientList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hasta\frmOperationList.resx">
-      <DependentUpon>frmOperationList.cs</DependentUpon>
+    <EmbeddedResource Include="Hasta\FRMOperationList.resx">
+      <DependentUpon>FRMOperationList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,7 +184,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Sablon_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -198,6 +200,13 @@
     <None Include="Resources\exit2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="myDatabases\Hasta.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="myDatabases\Hasta_Log.ldf">
+      <DependentUpon>Hasta.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="patient-icon-9244-Windows.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +220,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="myDatabasesFull\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

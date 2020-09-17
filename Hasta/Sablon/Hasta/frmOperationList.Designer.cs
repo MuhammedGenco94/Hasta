@@ -1,6 +1,6 @@
 ﻿namespace Sablon.Hasta
 {
-    partial class FrmOperationList
+    partial class FRMOperationList
     {
         /// <summary>
         /// Required designer variable.
@@ -285,15 +285,15 @@
             this.OperasyonTuru.Name = "OperasyonTuru";
             this.OperasyonTuru.ReadOnly = true;
             // 
-            // FrmOperationList
+            // FRMOperationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmOperationList";
-            this.Text = "frmOperationList";
-            this.Load += new System.EventHandler(this.frmOperationList_Load);
+            this.Text = "FRMOperationList";
+            this.Load += new System.EventHandler(this.FRMOperationList_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();

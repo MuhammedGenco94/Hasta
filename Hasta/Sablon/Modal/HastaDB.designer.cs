@@ -30,9 +30,9 @@ namespace Sablon.Modal
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void Insertdbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
-    partial void Updatedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
-    partial void Deletedbo_tblPatolojikVeriler(dbo_tblPatolojikVeriler instance);
+    partial void InserttblPatolojikVeriler(tblPatolojikVeriler instance);
+    partial void UpdatetblPatolojikVeriler(tblPatolojikVeriler instance);
+    partial void DeletetblPatolojikVeriler(tblPatolojikVeriler instance);
     partial void InserttblTakipVerileri(tblTakipVerileri instance);
     partial void UpdatetblTakipVerileri(tblTakipVerileri instance);
     partial void DeletetblTakipVerileri(tblTakipVerileri instance);
@@ -86,11 +86,11 @@ namespace Sablon.Modal
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<dbo_tblPatolojikVeriler> dbo_tblPatolojikVerilers
+		public System.Data.Linq.Table<tblPatolojikVeriler> tblPatolojikVerilers
 		{
 			get
 			{
-				return this.GetTable<dbo_tblPatolojikVeriler>();
+				return this.GetTable<tblPatolojikVeriler>();
 			}
 		}
 		
@@ -151,8 +151,8 @@ namespace Sablon.Modal
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[dbo.tblPatolojikVeriler]")]
-	public partial class dbo_tblPatolojikVeriler : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[tblPatolojikVeriler]")]
+	public partial class tblPatolojikVeriler : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -193,7 +193,7 @@ namespace Sablon.Modal
     partial void OnCERRAHI_SINIRChanged();
     #endregion
 		
-		public dbo_tblPatolojikVeriler()
+		public tblPatolojikVeriler()
 		{
 			this._tblHastaBilgileri = default(EntityRef<tblHastaBilgileri>);
 			OnCreated();
@@ -343,7 +343,7 @@ namespace Sablon.Modal
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tblHastaBilgileri_dbo_tblPatolojikVeriler", Storage="_tblHastaBilgileri", ThisKey="HastaID", OtherKey="ID", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tblHastaBilgileri_tblPatolojikVeriler", Storage="_tblHastaBilgileri", ThisKey="HastaID", OtherKey="ID", IsForeignKey=true)]
 		public tblHastaBilgileri tblHastaBilgileri
 		{
 			get
@@ -360,12 +360,12 @@ namespace Sablon.Modal
 					if ((previousValue != null))
 					{
 						this._tblHastaBilgileri.Entity = null;
-						previousValue.dbo_tblPatolojikVerilers.Remove(this);
+						previousValue.tblPatolojikVerilers.Remove(this);
 					}
 					this._tblHastaBilgileri.Entity = value;
 					if ((value != null))
 					{
-						value.dbo_tblPatolojikVerilers.Add(this);
+						value.tblPatolojikVerilers.Add(this);
 						this._HastaID = value.ID;
 					}
 					else
@@ -1168,7 +1168,7 @@ namespace Sablon.Modal
 		
 		private System.Nullable<int> _ANAH;
 		
-		private EntitySet<dbo_tblPatolojikVeriler> _dbo_tblPatolojikVerilers;
+		private EntitySet<tblPatolojikVeriler> _tblPatolojikVerilers;
 		
 		private EntitySet<tblTakipVerileri> _tblTakipVerileris;
 		
@@ -1202,7 +1202,7 @@ namespace Sablon.Modal
 		
 		public tblHastaBilgileri()
 		{
-			this._dbo_tblPatolojikVerilers = new EntitySet<dbo_tblPatolojikVeriler>(new Action<dbo_tblPatolojikVeriler>(this.attach_dbo_tblPatolojikVerilers), new Action<dbo_tblPatolojikVeriler>(this.detach_dbo_tblPatolojikVerilers));
+			this._tblPatolojikVerilers = new EntitySet<tblPatolojikVeriler>(new Action<tblPatolojikVeriler>(this.attach_tblPatolojikVerilers), new Action<tblPatolojikVeriler>(this.detach_tblPatolojikVerilers));
 			this._tblTakipVerileris = new EntitySet<tblTakipVerileri>(new Action<tblTakipVerileri>(this.attach_tblTakipVerileris), new Action<tblTakipVerileri>(this.detach_tblTakipVerileris));
 			this._tblDemografik_Ozellikleris = new EntitySet<tblDemografik_Ozellikleri>(new Action<tblDemografik_Ozellikleri>(this.attach_tblDemografik_Ozellikleris), new Action<tblDemografik_Ozellikleri>(this.detach_tblDemografik_Ozellikleris));
 			this._tblOperatif_Ozelliklers = new EntitySet<tblOperatif_Ozellikler>(new Action<tblOperatif_Ozellikler>(this.attach_tblOperatif_Ozelliklers), new Action<tblOperatif_Ozellikler>(this.detach_tblOperatif_Ozelliklers));
@@ -1370,16 +1370,16 @@ namespace Sablon.Modal
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tblHastaBilgileri_dbo_tblPatolojikVeriler", Storage="_dbo_tblPatolojikVerilers", ThisKey="ID", OtherKey="HastaID")]
-		public EntitySet<dbo_tblPatolojikVeriler> dbo_tblPatolojikVerilers
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="tblHastaBilgileri_tblPatolojikVeriler", Storage="_tblPatolojikVerilers", ThisKey="ID", OtherKey="HastaID")]
+		public EntitySet<tblPatolojikVeriler> tblPatolojikVerilers
 		{
 			get
 			{
-				return this._dbo_tblPatolojikVerilers;
+				return this._tblPatolojikVerilers;
 			}
 			set
 			{
-				this._dbo_tblPatolojikVerilers.Assign(value);
+				this._tblPatolojikVerilers.Assign(value);
 			}
 		}
 		
@@ -1455,13 +1455,13 @@ namespace Sablon.Modal
 			}
 		}
 		
-		private void attach_dbo_tblPatolojikVerilers(dbo_tblPatolojikVeriler entity)
+		private void attach_tblPatolojikVerilers(tblPatolojikVeriler entity)
 		{
 			this.SendPropertyChanging();
 			entity.tblHastaBilgileri = this;
 		}
 		
-		private void detach_dbo_tblPatolojikVerilers(dbo_tblPatolojikVeriler entity)
+		private void detach_tblPatolojikVerilers(tblPatolojikVeriler entity)
 		{
 			this.SendPropertyChanging();
 			entity.tblHastaBilgileri = null;
